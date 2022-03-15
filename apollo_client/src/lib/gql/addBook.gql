@@ -1,0 +1,7 @@
+mutation addBook($title: String, $author: AuthorInput) {
+    addBook(title: $title, author: $author) {
+        isSuccess
+        errorText
+        successText
+    }
+}
